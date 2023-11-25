@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 import DestinationContent from "../components/DestinationContent";
 
@@ -13,7 +13,7 @@ const Destination = () => {
     distance: planets.destinations[0].distance,
     travel: planets.destinations[0].travel,
   });
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     // adds the active class as page loads
